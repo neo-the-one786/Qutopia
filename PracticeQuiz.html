@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz: Test Your Knowledge</title>
+    <style>
+        body {
+            font-family: Georgia, serif;
+            background-color: #ae2d2d;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #34495e;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: #fff;
+            font-size: 36px;
+            margin-bottom: 10px;
+            margin: 0;
+        }
+
+        header h2 {
+            color: #fff;
+            font-size: 12px;
+            margin-bottom: 10px;
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        
+        nav {
+            background-color: #333;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 3px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f7ff9c;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 100px;
+        }
+
+        .question {
+            text-align: left;
+            margin-bottom: 10px;
+            color: #333;
+            float: left;
+            clear: left;
+        }
+
+        .question-image {
+            width: 200px;
+            margin-bottom: 10px;
+            float: right;
+            clear: right;
+        }
+
+        .options {
+            margin-bottom: 20px;
+            float: left;
+            clear: left;
+        }
+
+        .options label {
+            display: block;
+            margin-bottom: 10px;
+            color: #666;
+            float: left;
+            clear: left;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        .result {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        footer {
+            background-color: #34495e;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>InQUIZition</h1>
+        <h2>The newest online portal for practicing quiz</h2>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Study Material</a></li>
+            <li><a href="#">Practice Tests</a></li>
+            <li><a href="#">About US</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="box1">
+            <form id="quiz-form">
+            <div class="question">
+                <p>Question 1: Which emperor defeated Alexander's general Seleucus Nicator?</p>
+                <div class="options">
+                    <label>
+                        <input type="radio" name="q1" value="a"> a) Chandragupta Maurya
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="b"> b) Kanishka
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="c"> c) Chandragupta Vikramaditya
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="d"> d) Harshavardhana
+                    </label>
+                </div>
+            </div>
+            <div class="question">
+                <p>Question 2: Who was the ruler of the Maratha Empire at its zenith?</p>
+                <div class="options">
+                    <label>
+                        <input type="radio" name="q2" value="a"> a) Chhatrapati Shivaji
+                    </label>
+                    <label>
+                        <input type="radio" name="q2" value="b"> b) Baji Rao
+                    </label>
+                    <label>
+                        <input type="radio" name="q2" value="c"> c) Balaji Baji Rao
+                    </label>
+                    <label>
+                        <input type="radio" name="q2" value="d"> d) Madhavrao
+                    </label>
+                </div>
+            </div>
+            <div class="question">
+                <p>Question 3: Which Indian ruler conquered Sri lanka?</p>
+                <div class="options">
+                    <label>
+                        <input type="radio" name="q3" value="a"> a) Gautamiputra Satakarni
+                    </label>
+                    <label>
+                        <input type="radio" name="q3" value="b"> b) Pulakeshin
+                    </label>
+                    <label>
+                        <input type="radio" name="q3" value="c"> c) Rajaraja
+                    </label>
+                    <label>
+                        <input type="radio" name="q3" value="d"> d) Amoghavarsha
+                    </label>
+                </div>
+            </div>
+            <div class="question">
+                <p>Question 4: Which military commander of the Indian Rebellion of 1857 was undefeated by the British?</p>
+                <div class="options">
+                    <label>
+                        <input type="radio" name="q4" value="a"> a) Nana Sahib
+                    </label>
+                    <label>
+                        <input type="radio" name="q4" value="b"> b) Rani Lakshmi Bai
+                    </label>
+                    <label>
+                        <input type="radio" name="q4" value="c"> c) Tatya Tope
+                    </label>
+                    <label>
+                        <input type="radio" name="q4" value="d"> d) Kunwar Singh
+                    </label>
+                </div>
+            </div>
+            <div class="question">
+                <p>Question 5: Who was the first Field Marshal of India?</p>
+                <div class="options">
+                    <label>
+                        <input type="radio" name="q5" value="a"> a) Sam Manekshaw
+                    </label>
+                    <label>
+                        <input type="radio" name="q5" value="b"> b) K. M. Cariappa
+                    </label>
+                    <label>
+                        <input type="radio" name="q5" value="c"> c) Bipin Rawat
+                    </label>
+                    <label>
+                        <input type="radio" name="q5" value="d"> d) Ved Prakash Malik
+                    </label>
+                </div>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        </div>
+        
+        <div class="box2">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Seleucos_Nicator_Louvre_Ma3597_n3.jpg"
+                alt="Question 1" class="question-image">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/India1760_1905.jpg" alt="Question 2" class="question-image">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Wall_paintings_depicted_in_the_cloister_Mandapa%2C_Big_Temple%2C_Thanjavur_-_3.JPG" alt="Question 3" class="question-image">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Defence-of-Arrah-House.png" alt="Question 4" class="question-image">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/80/Flag_of_Field_marshal_%28India%29.png" alt="Question 5" class="question-image">
+        </div>
+
+        <div id="result" class="result"></div>
+
+    </div>
+    
+    <script>
+        const form = document.getElementById('quiz-form');
+        const resultDiv = document.getElementById('result');
+
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const answers = {
+                q1: form.q1.value,
+                q2: form.q2.value,
+                q3: form.q3.value,
+                q4: form.q4.value,
+                q5: form.q5.value,
+            };
+
+            const correctAnswers = {
+                q1: 'a',
+                q2: 'c',
+                q3: 'c',
+                q4: 'd',
+                q5: 'b',
+            };
+
+            let score = 0;
+            for (let question in answers) {
+                if (answers[question] === correctAnswers[question]) {
+                    score++;
+                }
+            }
+
+            const percentage = (score / 5) * 100;
+            let result = '';
+
+            if (percentage == 100) {
+                result = 'Congratulations! You scored ' + score + '/5. Noice!';
+            } else if (percentage >= 50) {
+                result = 'You scored ' + score + '/5. Okie!';
+            } else {
+                result = 'You scored ' + score + '/5. Disappointing!';
+            }
+
+            resultDiv.textContent = result;
+        });
+    </script>
+
+    <footer>
+        <p>&copy; 2023 Divyanshu Mishra Quizzer. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
